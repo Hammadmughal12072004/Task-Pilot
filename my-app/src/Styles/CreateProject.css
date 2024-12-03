@@ -1,0 +1,202 @@
+/* Overall Container */
+.create-project-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  background-color: #fafaf0; /* Light beige background */
+  padding: 20px;
+}
+
+/* Header Section */
+.create-project-header {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #f8f8f0;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  padding: 0 20px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.user-avatar {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #c4c4c4; /* Placeholder */
+}
+
+.user-name {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+}
+
+.user-role {
+  font-size: 12px;
+  color: #777;
+}
+
+/* Card Section */
+.create-project-card {
+  width: 700px;
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+/* Form Groups */
+.form-group {
+  margin-bottom: 25px;
+}
+
+label {
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* ICON AND NAME */
+.icon-name-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #f7f7f7;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 10px 15px;
+}
+
+.icon-placeholder {
+  background-color: #7c4dff;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.input-field {
+  flex: 1;
+  font-size: 14px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+/* DESCRIPTION */
+.input-field {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f7f7f7;
+}
+
+/* ONLY PRIVATE */
+.toggle-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.toggle-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.toggle {
+  width: 50px;
+  height: 24px;
+  -webkit-appearance: none;
+  appearance: none;
+  background: #ddd;
+  border-radius: 20px;
+  position: relative;
+  outline: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.toggle:checked {
+  background: #51b246;
+}
+
+.toggle:before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border-radius: 50%;
+  top: 2px;
+  left: 2px;
+  transition: 0.3s;
+}
+
+.toggle:checked:before {
+  left: 26px;
+}
+
+.toggle-info {
+  font-size: 12px;
+  color: #666;
+}
+
+/* BUTTONS */
+.form-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+}
+
+.btn {
+  padding: 10px 20px;
+  font-size: 14px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn.save {
+  background-color: #51b246;
+  color: #fff;
+}
+
+.btn.save:hover {
+  background-color: #45a039;
+}
+
+.btn.cancel {
+  background-color: #ddd;
+  color: #333;
+}
+
+.btn.cancel:hover {
+  background-color: #ccc;
+}

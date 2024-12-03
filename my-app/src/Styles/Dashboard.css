@@ -1,0 +1,179 @@
+/* Container */
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #fafaf0;
+  padding: 20px;
+}
+
+/* Header Section */
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #dff6d3;
+  padding: 15px 30px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.dashboard-icon {
+  font-size: 18px;
+  color: #51b206;
+}
+
+.dashboard-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.user-avatar {
+  width: 40px;
+  height: 40px;
+  background-color: #7c4dff;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+}
+
+.user-name {
+  font-weight: bold;
+  color: #333;
+}
+
+.user-role {
+  font-size: 12px;
+  color: #666;
+}
+
+.manage-cards {
+  font-size: 14px;
+  font-weight: bold;
+  color: #51b206;
+  cursor: pointer;
+}
+
+/* Main Content */
+.dashboard-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.project-card {
+  width: 600px;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.project-card h2 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.project-card p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* Form Group */
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.dropdown select {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  color: #333;
+  outline: none;
+}
+
+.dropdown select:focus {
+  border-color: #51b206;
+}
+
+/* Buttons */
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.btn {
+  padding: 10px 20px;
+  font-size: 14px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.create-reports {
+  background-color: #51b206;
+  color: #fff;
+}
+
+.create-reports:hover {
+  background-color: #45a039;
+}
+
+.create-dashboard {
+  background-color: #333;
+  color: #fff;
+}
+
+.create-dashboard:hover {
+  background-color: #444;
+}
+
+.back {
+  background-color: #ddd;
+  color: #333;
+}
+
+.back:hover {
+  background-color: #ccc;
+}
