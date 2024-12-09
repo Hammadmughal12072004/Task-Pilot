@@ -1,17 +1,14 @@
-/* Main Container */
 .create-sprint-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 20px;
-    background-color: #fafaf0;
+    background-color: #AFE1AF;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     width: 700px;
-    margin: 20px auto;
+    margin: 0 auto;
   }
   
-  /* Title */
   .create-sprint-title {
     font-size: 24px;
     font-weight: bold;
@@ -19,9 +16,12 @@
     margin-bottom: 20px;
   }
   
-  /* Form */
   .sprint-form {
     width: 100%;
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   }
   
   .form-group {
@@ -32,17 +32,21 @@
     display: block;
     font-size: 14px;
     font-weight: bold;
-    color: #333;
     margin-bottom: 8px;
+    color: #333;
   }
   
   .input-field {
     width: 100%;
-    padding: 12px;
+    padding: 10px;
     font-size: 14px;
     border: 1px solid #ddd;
     border-radius: 8px;
-    background-color: #f7f7f7;
+    background-color: #f9f9f9;
+  }
+  
+  .duration-section {
+    margin-bottom: 20px;
   }
   
   .duration-options {
@@ -51,48 +55,41 @@
     margin-bottom: 10px;
   }
   
-  .duration-options label {
-    font-size: 14px;
-    color: #333;
-    cursor: pointer;
-  }
-  
-  .input-date {
-    width: calc(50% - 10px);
-    padding: 10px;
-    font-size: 14px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    background-color: #f7f7f7;
-  }
-  
   .duration-dates {
     display: flex;
     gap: 10px;
   }
   
+  .input-date {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    width: 48%;
+  }
+  
   .textarea-field {
     width: 100%;
-    height: 100px;
-    padding: 12px;
+    height: 80px;
+    padding: 10px;
     font-size: 14px;
     border: 1px solid #ddd;
     border-radius: 8px;
-    background-color: #f7f7f7;
+    background-color: #f9f9f9;
+    resize: none;
   }
   
-  /* Buttons */
   .form-buttons {
     display: flex;
     justify-content: flex-end;
-    gap: 15px;
+    gap: 10px;
   }
   
   .btn {
     padding: 10px 20px;
     font-size: 14px;
-    border: none;
     border-radius: 8px;
+    border: none;
     cursor: pointer;
     transition: background-color 0.3s ease;
   }

@@ -1,5 +1,5 @@
 import React from "react";
-import '../Styles/CreateSprint.css';
+import "../Styles/CreateSprint.css";
 
 function CreateSprint() {
   return (
@@ -13,14 +13,14 @@ function CreateSprint() {
             <input
               type="text"
               id="sprint-name"
-              placeholder="Sprint (MM/DD - MM/DD)"
+              placeholder="Sprint [INDEX] ({START_DATE} - {END_DATE})"
               className="input-field"
               readOnly
             />
           </div>
 
           {/* Sprint Duration */}
-          <div className="form-group">
+          <div className="form-group duration-section">
             <label>Sprint Duration</label>
             <div className="duration-options">
               <label>

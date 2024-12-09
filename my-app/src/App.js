@@ -9,7 +9,8 @@ import Home from './Components/Home';
 import Sidebar from './Components/Sidebar';
 import ForgotPassword from './Components/ForgotPassword';
 import Logout from './Components/Logout';
-import CreateSprint from './Components/CreateSprint'; // Import CreateSprint component
+import CreateSprint from './Components/CreateSprint';
+import Board from './Components/Board'; // Import Board component
 
 function App() {
   return (
@@ -27,7 +28,8 @@ function App() {
           <Route path="home" element={<Home />} />
           <Route path="dashboard" element={<Dashboard />} />
           <Route path="create-project" element={<CreateProject />} />
-          <Route path="create-sprint" element={<CreateSprint />} /> {/* Add CreateSprint route */}
+          <Route path="create-sprint" element={<CreateSprint />} />
+          <Route path="board" element={<Board />} /> {/* Add Board route */}
         </Route>
       </Routes>
     </Router>
