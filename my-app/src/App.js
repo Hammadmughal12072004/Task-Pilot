@@ -5,8 +5,11 @@ import SignUp from './Components/SignUp';
 import ChangePassword from './Components/ChangePassword';
 import CreateProject from './Components/CreateProject';
 import Dashboard from './Components/Dashboard';
-import Home from './Components/Home'; // Import the Home component
+import Home from './Components/Home';
 import Sidebar from './Components/Sidebar';
+import ForgotPassword from './Components/ForgotPassword';
+import Logout from './Components/Logout';
+import CreateSprint from './Components/CreateSprint'; // Import CreateSprint component
 
 function App() {
   return (
@@ -16,19 +19,22 @@ function App() {
         <Route path="/" element={<Login />} />
         <Route path="/signup" element={<SignUp />} />
         <Route path="/change-password" element={<ChangePassword />} />
+        <Route path="/forgot-password" element={<ForgotPassword />} />
+        <Route path="/logout" element={<Logout />} />
 
         {/* Routes with Sidebar */}
         <Route path="/" element={<MainLayout />}>
-          <Route path="home" element={<Home />} /> {/* Home page route */}
+          <Route path="home" element={<Home />} />
           <Route path="dashboard" element={<Dashboard />} />
           <Route path="create-project" element={<CreateProject />} />
+          <Route path="create-sprint" element={<CreateSprint />} /> {/* Add CreateSprint route */}
         </Route>
       </Routes>
     </Router>
   );
 }
 
-// Separate MainLayout to handle sidebar visibility
+// MainLayout Component: Handles layout with Sidebar
 function MainLayout() {
   return (
     <div style={{ display: 'flex', height: '100vh' }}>

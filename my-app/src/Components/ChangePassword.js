@@ -1,43 +1,54 @@
-
 import React from 'react';
 import '../Styles/ChangePassword.css';
-import Logo from '../images/4.png'; // Replace with your actual logo path
-import ChangePasswordGraphic from '../images/3.jpg'; // Renamed the imported graphic
+import Logo from '../images/4.png'; // Replace with your logo path
+import ChangePasswordGraphic from '../images/3.jpg'; // Replace with your graphic path
 
 function ChangePassword() {
   return (
     <div className="change-password-container">
       {/* Form Section */}
       <div className="form-section">
-        <div className='form-upper-section'>
-          <div className="change-password-logo">
-            <img src={Logo} alt="App Logo" />
-          </div>
-          <h1 className='change-password-text'>Change Password</h1>
-          <p className='forget-password-text'>Forgot Password</p>
+        <div className="logo-container">
+          <img src={Logo} alt="Logo" className="logo" />
         </div>
-
-        <form className='change-password-form'>
-          <input type="email" placeholder="Enter your email address" />
-          <div className="password-input">
-            <input type="password" placeholder="Enter your old password" />
-            <i className="fas fa-eye"></i>
+        <h1 className="change-password-title">Change Password</h1>
+        <form className="change-password-form">
+          <div className="input-group">
+            <div className="password-input">
+              <input
+                type="password"
+                id="old-password"
+                placeholder="Enter your old password"
+                required
+              />
+              <i className="fas fa-eye"></i>
+            </div>
           </div>
-          <div className="password-input">
-            <input type="password" placeholder="Enter your new password" />
-            <i className="fas fa-eye"></i>
+          <div className="input-group">
+            <div className="password-input">
+              <input
+                type="password"
+                id="new-password"
+                placeholder="Enter your new password"
+                required
+              />
+              <i className="fas fa-eye"></i>
+            </div>
           </div>
-          <div className="password-input">
-            <input type="password" placeholder="Confirm New Password" />
-            <i className="fas fa-eye"></i>
-          </div>
-          <button type="submit" className="confirm-btn">Confirm New Password</button>
+          <button type="submit" className="submit-btn">Submit</button>
         </form>
+        <p className="back-to-login">
+          Back to <a href="/login">Sign In</a>
+        </p>
       </div>
 
       {/* Image Section */}
       <div className="image-section">
-        <img src={ChangePasswordGraphic} alt="Security Graphic" className="graphic-img" />
+        <img
+          src={ChangePasswordGraphic}
+          alt="Change Password Graphic"
+          className="graphic-img"
+        />
       </div>
     </div>
   );

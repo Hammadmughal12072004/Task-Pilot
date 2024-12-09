@@ -1,117 +1,94 @@
-/* Home Container */
-.home-container {
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    background-color: #fafaf0;
-    height: 100vh;
-  }
-  
-  /* Header Section */
-  .home-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #dff6d3;
-    padding: 15px 20px;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .header-left {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-  
-  .home-icon {
-    font-size: 20px;
-    color: #51b206;
-  }
-  
-  .header-right {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-  }
-  
-  .user-info {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-  
-  .user-avatar {
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    background-color: #c4c4c4; /* Placeholder color */
-  }
-  
-  .user-name {
-    font-size: 14px;
-    font-weight: bold;
-    color: #333;
-  }
-  
-  .user-role {
-    font-size: 12px;
-    color: #777;
-  }
-  
-  .manage-cards {
-    font-size: 14px;
-    color: #51b206;
-    cursor: pointer;
-  }
-  
-  /* Content Section */
-  .home-content h2 {
-    font-size: 18px;
-    color: #333;
-    margin-bottom: 20px;
-  }
-  
-  .cards-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-  }
-  
-  .card {
-    background-color: #fff;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-  }
-  
-  .card h3 {
-    font-size: 16px;
-    color: #333;
-    margin-bottom: 10px;
-  }
-  
-  .card-content {
-    flex: 1;
-    overflow-y: auto;
-    max-height: 200px; /* Adjust the height as needed */
-    padding-right: 10px;
-  }
-  
-  .card-content::-webkit-scrollbar {
-    width: 6px;
-  }
-  
-  .card-content::-webkit-scrollbar-thumb {
-    background-color: #51b206;
-    border-radius: 10px;
-  }
-  
-  .card-content::-webkit-scrollbar-track {
-    background-color: #f0f0f0;
-  }
-  
+/* Main Container */
+.home-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f8fbe8;
+  padding: 5px 20px; /* Reduced padding for slim navbar */
+  border-radius: 12px; /* Slightly rounded corners */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Minimal shadow */
+  height: 40px; /* Reduced height for a compact look */
+  margin: 10px 20px; /* Add spacing for the outer layout */
+}
+
+/* Left Section */
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 6px; /* Reduced gap for compact spacing */
+}
+
+.home-icon {
+  font-size: 16px; /* Reduced icon size */
+  color: #51b206;
+}
+
+.dashboard-title {
+  font-size: 14px; /* Reduced font size */
+  font-weight: bold;
+  color: #333;
+}
+
+/* Right Section */
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Compact spacing */
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.user-avatar {
+  width: 25px; /* Smaller avatar size */
+  height: 25px;
+  border-radius: 50%;
+  background-color: #c4c4c4;
+}
+
+.user-name {
+  font-size: 12px; /* Reduced font size for user name */
+  font-weight: bold;
+  color: #333;
+}
+
+.user-role {
+  font-size: 10px; /* Smaller font for user role */
+  color: #777;
+}
+
+/* Main Content Section */
+.home-content h2 {
+  font-size: 18px;
+  color: #333;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 10px 50px;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 150px;
+}
+
+.card h3 {
+  font-size: 16px;
+  color: #333;
+  font-weight: bold;
+  text-align: center;
+}

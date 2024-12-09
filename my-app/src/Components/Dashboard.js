@@ -9,10 +9,10 @@ function Dashboard() {
       {/* Header Section */}
       <div className="dashboard-header">
         <div className="header-title">
-          <span className="dashboard-icon">⬛</span>
-          <span className="dashboard-title">Dashboard</span>
+          <span className="dashboard-title">Projects</span>
         </div>
         <div className="header-right">
+          <button className="create-project-btn">Create Project</button>
           <div className="user-info">
             <div className="user-avatar">👤</div>
             <div>
@@ -20,7 +20,6 @@ function Dashboard() {
               <div className="user-role">User</div>
             </div>
           </div>
-          <span className="manage-cards">Manage Cards</span>
         </div>
       </div>
 

@@ -6,14 +6,17 @@ function CreateProject() {
     <div className="create-project-container">
       {/* Header */}
       <div className="create-project-header">
+        <span className="header-title">Project Creation</span>
         <span className="user-info">
           <img
             src="path-to-user-icon"
             alt="User"
             className="user-avatar"
           />
-          <span className="user-name">Hammad Mughal</span>
-          <span className="user-role">User</span>
+          <span className="user-details">
+            <span className="user-name">Hammad Mughal</span>
+            <span className="user-role">User</span>
+          </span>
         </span>
       </div>
 
@@ -50,7 +53,7 @@ function CreateProject() {
             <div className="toggle-container">
               <input type="checkbox" className="toggle" />
               <span className="toggle-info">
-                Only You and Invited members have Access.
+                Only you and invited members have access.
               </span>
             </div>
           </div>

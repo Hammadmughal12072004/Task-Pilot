@@ -4,7 +4,7 @@
   flex-direction: column;
   align-items: center;
   height: 100vh;
-  background-color: #fafaf0; /* Light beige background */
+  background-color: #f9f9f2; /* Light off-white background */
   padding: 20px;
 }
 
@@ -13,12 +13,18 @@
   width: 100%;
   height: 60px;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
-  background-color: #f8f8f0;
+  background-color: #ffffff;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
   border-radius: 10px;
   padding: 0 20px;
+}
+
+.header-title {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
 }
 
 .user-info {
@@ -34,6 +40,11 @@
   background-color: #c4c4c4; /* Placeholder */
 }
 
+.user-details {
+  display: flex;
+  flex-direction: column;
+}
+
 .user-name {
   font-size: 14px;
   font-weight: bold;
@@ -47,55 +58,56 @@
 
 /* Card Section */
 .create-project-card {
-  width: 700px;
+  width: 600px;
   background-color: #ffffff;
-  padding: 40px;
+  padding: 30px;
   border-radius: 20px;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  margin-top: 30px;
 }
 
 h2 {
   text-align: center;
-  font-size: 24px;
-  margin-bottom: 30px;
+  font-size: 22px;
+  margin-bottom: 20px;
   color: #333;
 }
 
 /* Form Groups */
 .form-group {
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 label {
   display: block;
   font-size: 14px;
   font-weight: bold;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   color: #333;
 }
 
-/* ICON AND NAME */
 .icon-name-group {
   display: flex;
   align-items: center;
-  gap: 10px;
-  background-color: #f7f7f7;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  padding: 10px 15px;
+  gap: 5px; /* Reduced gap between icon and input */
+  background-color: #ffffff; /* Changed background color to white */
+  border: 1px solid #ddd; /* Maintains a subtle border */
+  border-radius: 5px; /* Softer border radius */
+  padding: 8px 10px; /* Reduced padding */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Slight shadow for a clean look */
 }
 
 .icon-placeholder {
   background-color: #7c4dff;
   color: #fff;
-  font-size: 16px;
+  font-size: 14px; /* Slightly reduced font size */
   font-weight: bold;
-  width: 40px;
-  height: 40px;
+  width: 36px; /* Reduced width */
+  height: 36px; /* Reduced height */
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 50%;
+  border-radius: 50%; /* Maintains circular shape */
 }
 
 .input-field {
@@ -103,7 +115,8 @@ label {
   font-size: 14px;
   border: none;
   outline: none;
-  background-color: transparent;
+  background-color: transparent; /* Matches background */
+  padding-left: 5px; /* Adjust padding for better alignment */
 }
 
 /* DESCRIPTION */
@@ -143,7 +156,7 @@ label {
 }
 
 .toggle:checked {
-  background: #51b246;
+  background: #51b206;
 }
 
 .toggle:before {
@@ -184,7 +197,7 @@ label {
 }
 
 .btn.save {
-  background-color: #51b246;
+  background-color: #51b206;
   color: #fff;
 }
 

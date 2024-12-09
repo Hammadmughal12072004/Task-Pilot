@@ -1,157 +1,184 @@
-/* Main container */
+/* Main Container */
 .signup-container {
   display: flex;
-  width: 100%;
   height: 100vh;
-  align-items: stretch;
-  justify-content: center;
-  background-color: #f5f5f5;
-  font-family: Arial, sans-serif;
+  width: 100%;
+  font-family: 'Arial', sans-serif;
 }
 
-/* Image Section */
+/* Left Image Section */
 .image-section {
   flex: 1;
   display: flex;
-  align-items: center;
   justify-content: center;
-  background-color: #fff;
+  align-items: center;
+  background-color: #000;
 }
 
-.image-container {
-  width: 100%;
-  height: auto;
-  aspect-ratio: 3 / 4;
-  overflow: hidden;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.image {
+.signup-image {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-/* Form Section */
+/* Right Form Section */
 .form-section {
   flex: 1;
-  background-color: #fff;
-  padding: 60px 40px;
+  padding: 60px;
+  background: #ffffff;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   text-align: center;
-  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+  justify-content: center;
 }
 
-.logo img {
-  height: 50px;
+/* Form Header */
+.form-header {
   margin-bottom: 20px;
 }
 
-.create-account-text {
+.app-logo {
+  width: 50px;
+  margin-bottom: 10px;
+}
+
+.form-title {
   font-size: 28px;
-  color: #333;
-  margin-bottom: 20px;
   font-weight: bold;
-}
-
-.signup-or-section {
-  display: flex;
-  align-items: center;
-  width: 66%;
-}
-
-.signup-or-section hr {
-  width: 30%;
-  height: 0.01px;
-  opacity: 0.3;
+  color: #333;
 }
 
 /* Google Button */
 .google-btn {
-  background-color: #fff;
-  color: #0e0c0c;
-  border: none;
-  padding: 12px 20px;
-  font-size: 16px;
-  cursor: pointer;
-  border-radius: 5px;
-  margin-bottom: 20px;
-  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  width: 100%;
+  max-width: 350px;
+  padding: 12px 20px;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 50px;
+  font-size: 16px;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.google-btn:hover {
+  background-color: #51B206;
+  color: #ffffff;
 }
 
 .google-icon {
   width: 20px;
-  height: 20px;
+  margin-right: 10px;
 }
 
-.google-btn:hover {
-  background-color: #51B246;
+/* Divider */
+.divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 350px;
+  margin: 20px 0;
 }
 
+.divider hr {
+  flex: 1;
+  border: none;
+  height: 1px;
+  background-color: #ccc;
+}
+
+.divider span {
+  margin: 0 10px;
+  color: #666;
+  font-size: 14px;
+}
+
+/* Signup Form */
 .signup-form {
   width: 100%;
-  max-width: 400px;
-  margin-top: 20px;
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
 }
 
 .signup-form input {
   width: 100%;
   padding: 12px;
-  margin: 10px 0;
+  margin-bottom: 15px;
   border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 16px;
-  box-sizing: border-box;
+}
+
+/* Terms & Conditions */
+.terms {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.terms input {
+  margin-right: 10px;
 }
 
 /* Signup Button */
 .signup-btn {
   width: 100%;
-  background-color: #28a745;
-  color: #fff;
   padding: 12px;
-  border: none;
   font-size: 16px;
-  border-radius: 5px;
+  font-weight: bold;
+  background-color: #51B206;
+  color: #ffffff;
+  border: none;
+  border-radius: 50px;
   cursor: pointer;
-  margin-top: 20px;
   transition: background-color 0.3s ease;
 }
 
 .signup-btn:hover {
-  background-color: #218838;
+  background-color: #47a105;
 }
 
-/* Social Media Icons */
+/* Login Text */
+.login-text {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.login-text a {
+  color: #51B206;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.login-text a:hover {
+  text-decoration: underline;
+}
+
+/* Social Icons */
 .social-icons {
   display: flex;
-  justify-content: center;
   gap: 15px;
   margin-top: 20px;
 }
 
 .social-icons a {
-  color: #51B246;
-  font-size: 24px;
-  text-decoration: none;
+  font-size: 20px;
+  color: #51B206;
   transition: color 0.3s ease;
 }
 
 .social-icons a:hover {
-  color: #28a745;
-}
-
-.signup-container a {
-  text-decoration: none;
-  color: #000000;
+  color: #218838;
 }
 
 /* Responsive Design */
@@ -161,17 +188,6 @@
   }
 
   .form-section {
-    padding: 30px 20px;
-  }
-
-  .google-btn,
-  .signup-btn {
-    font-size: 14px;
-    padding: 10px;
-  }
-
-  .signup-form input {
-    padding: 10px;
-    font-size: 14px;
+    padding: 20px;
   }
 }

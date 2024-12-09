@@ -1,0 +1,80 @@
+/* Main Container */
+.logout-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #ffffff; /* White background */
+    font-family: "Arial", sans-serif;
+  }
+  
+  /* Logo */
+  .logout-logo {
+    width: 60px; /* Adjust size as needed */
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  /* Title */
+  .logout-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  /* Email Text */
+  .logout-email {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 20px;
+  }
+  
+  /* Confirmation Text */
+  .logout-confirmation {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .logout-confirmation span {
+    color: #51b206; /* Task Pilot brand color */
+    font-weight: bold;
+  }
+  
+  /* Buttons */
+  .logout-buttons {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .btn-cancel,
+  .btn-confirm {
+    padding: 10px 20px;
+    font-size: 14px;
+    border: none;
+    border-radius: 30px; /* Rounded buttons */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-cancel {
+    background-color: #dff6d3; /* Light green */
+    color: #333;
+  }
+  
+  .btn-cancel:hover {
+    background-color: #cde5c3; /* Slightly darker on hover */
+  }
+  
+  .btn-confirm {
+    background-color: #51b206; /* Primary green */
+    color: #ffffff;
+  }
+  
+  .btn-confirm:hover {
+    background-color: #45a039; /* Darker green on hover */
+  }
+  

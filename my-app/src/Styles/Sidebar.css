@@ -4,12 +4,12 @@
   height: 100vh;
   background-color: #fff;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  border-radius: 20px; /* Rounded corners */
+  border-radius: 20px; /* Smooth rounded edges */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding: 20px;
-  overflow: hidden; /* Prevent content overflow */
+  overflow: hidden; /* Ensure no overflow */
 }
 
 /* Header Section */
@@ -17,7 +17,7 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  margin-bottom: 30px; /* Adds gap between header and menu */
+  margin-bottom: 30px; /* Separate header and menu */
 }
 
 .logo-icon {
@@ -32,7 +32,7 @@
 }
 
 .logo-highlight {
-  color: #51B206;
+  color: #51B206; /* Matches the green from the design */
 }
 
 /* Menu Section */
@@ -61,7 +61,12 @@
 
 .sidebar-menu .icon {
   margin-right: 10px;
-  color: #AFE1AF;
+  font-size: 18px;
+  color: #AFE1AF; /* Light green for icons */
+}
+
+.sidebar-menu li.active .icon {
+  color: #fff;
 }
 
 /* Divider Line */
@@ -107,5 +112,34 @@ hr {
 
 .sidebar-footer .icon {
   margin-right: 10px;
-  color: #AFE1AF;
+  font-size: 18px;
+  color: #AFE1AF; /* Consistent light green for icons */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    overflow-x: auto;
+    justify-content: space-around;
+    padding: 10px;
+  }
+
+  .sidebar-header {
+    display: none;
+  }
+
+  .sidebar-menu ul,
+  .sidebar-footer ul {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .sidebar-menu li,
+  .sidebar-footer li {
+    padding: 5px 10px;
+    font-size: 12px;
+  }
 }
