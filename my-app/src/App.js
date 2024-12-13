@@ -5,12 +5,10 @@ import SignUp from './Components/SignUp';
 import ChangePassword from './Components/ChangePassword';
 import CreateProject from './Components/CreateProject';
 import Dashboard from './Components/Dashboard';
-import Home from './Components/Home';
+import Home from './Components/Home'; // Import the Home component
 import Sidebar from './Components/Sidebar';
-import ForgotPassword from './Components/ForgotPassword';
-import Logout from './Components/Logout';
-import CreateSprint from './Components/CreateSprint';
-import Board from './Components/Board'; // Import Board component
+import ListView from './Components/ListView'; // Import the ListView component
+import TaskDetails from './Components/TaskDetails';
 
 function App() {
   return (
@@ -20,23 +18,21 @@ function App() {
         <Route path="/" element={<Login />} />
         <Route path="/signup" element={<SignUp />} />
         <Route path="/change-password" element={<ChangePassword />} />
-        <Route path="/forgot-password" element={<ForgotPassword />} />
-        <Route path="/logout" element={<Logout />} />
 
         {/* Routes with Sidebar */}
         <Route path="/" element={<MainLayout />}>
-          <Route path="home" element={<Home />} />
+          <Route path="home" element={<Home />} /> {/* Home page route */}
           <Route path="dashboard" element={<Dashboard />} />
-          <Route path="create-project" element={<CreateProject />} />
-          <Route path="create-sprint" element={<CreateSprint />} />
-          <Route path="board" element={<Board />} /> {/* Add Board route */}
+          <Route path="createproject" element={<CreateProject />} />
+          <Route path="ListView" element={<ListView />} />
+          <Route path="TaskDetails" element={<TaskDetails />} />
         </Route>
       </Routes>
     </Router>
   );
 }
 
-// MainLayout Component: Handles layout with Sidebar
+// Separate MainLayout to handle sidebar visibility
 function MainLayout() {
   return (
     <div style={{ display: 'flex', height: '100vh' }}>

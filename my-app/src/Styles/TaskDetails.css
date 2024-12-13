@@ -1,0 +1,177 @@
+/* Background */
+body {
+  background-color: #fffeec;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+
+.task-details-container {
+  margin: 20px;
+}
+
+/* Header */
+.task-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+
+
+.task-header h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #51b206;
+  text-decoration: underline;
+
+}
+
+.task-id {
+  display: flex;
+  align-items: center;
+  background-color: #51b206;
+  padding: 8px 15px;
+  border-radius: 15px;
+  color: white;
+}
+
+.task-id-value {
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+/* Task Summary */
+.task-summary h2 {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.task-info-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.task-info-item {
+  display: flex;
+  align-items: center;
+  padding: 7px 1rem;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.task-info-item .label {
+  font-weight: 500;
+  color: #666;
+}
+
+.task-info-item .value {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+}
+
+.task-info-item .value.to-do {
+  color: white;
+  background-color: blue;
+  padding: 2px 6px;
+  border-radius: 5px;
+}
+
+.task-info-item .value.high {
+  color: white;
+  background-color: red;
+  padding: 2px 6px;
+  border-radius: 5px;
+}
+
+.task-title {
+  text-decoration: underline;
+  color: #51b206;
+}
+
+.task-info-item .value.tag {
+  text-decoration: underline;
+  color: #51b206;
+}
+
+/* Description Section */
+.task-section h3 {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.task-section textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  resize: none;
+}
+
+/* Attachment Box */
+.attachment-box {
+  background-color: #f4f4f4;
+  padding: 20px;
+  border: 2px dashed #ccc;
+  border-radius: 10px;
+  text-align: center;
+  color: #888;
+}
+
+/* Footer */
+.task-details-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.subtasks {
+  width: 45%;
+}
+
+.subtasks .subtask-item {
+  background-color: #f4f4f4;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.subtasks .create-subtask {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #51b206;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.activity {
+  width: 50%;
+}
+
+.activity textarea {
+  width: 100%;
+  height: 80px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 10px;
+  resize: none;
+}
+
+.activity .send-button {
+  margin-top: 10px;
+  background-color: #51b206;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}

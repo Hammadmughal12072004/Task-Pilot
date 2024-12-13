@@ -1,0 +1,203 @@
+/* Background */
+body {
+  background-color: #fffeec;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Container */
+.list-view-container {
+  margin: 20px;
+}
+
+/* Header */
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.project-header h2 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+.header-tabs {
+  display: flex;
+}
+
+.tab {
+  padding: 8px 12px;
+  margin-right: 5px;
+  border: none;
+  border-radius: 15px;
+  background-color: #f4f4f4;
+  color: #333;
+  cursor: pointer;
+}
+
+.tab.active {
+  background-color: #51b206;
+  color: white;
+}
+
+/* Filter and Search */
+.filter-and-search {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.search-bar input {
+  padding: 6px;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  margin-right: 10px;
+}
+
+.search-bar button {
+  background-color: #51b206;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
+.filter-bar {
+  display: flex;
+  gap: 8px;
+}
+
+.filter-bar select,
+.filter-bar input {
+  padding: 6px;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+}
+
+/* Create Sprint Button */
+.create-sprint-button {
+  background-color: #51b206;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Sprint Section */
+.sprint-section h3 {
+  color: #51b206;
+  font-size: 16px;
+}
+
+
+.table-div {
+  border-radius: 15px;
+  overflow: hidden;
+  border: 1px solid rgb(219, 219, 219);
+}
+
+.task-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  border: none;
+
+}
+
+.table-body {
+  background-color: #FFFFFF;
+  border: none;
+}
+
+.task-table th,
+.task-table td {
+  text-align: left;
+  padding: 8px;
+  border: 1px solid #ddd;
+}
+
+.task-table th {
+  background-color: #FFFFFF;
+}
+
+/* Priority Tags */
+.priority.high {
+  color: white;
+  background-color: red;
+  padding: 2px 6px;
+  font-size: 10px;
+  border-radius: 10px;
+}
+
+.priority.medium {
+  color: white;
+  background-color: orange;
+  padding: 2px 6px;
+  font-size: 10px;
+  border-radius: 10px;
+}
+
+.priority.low {
+  color: white;
+  background-color: green;
+  padding: 2px 6px;
+  font-size: 10px;
+  border-radius: 10px;
+}
+
+/* Status Tags */
+.status.todo {
+  color: white;
+  background-color: blue;
+  padding: 2px 6px;
+  font-size: 10px;
+  border-radius: 10px;
+}
+
+.status.in-progress {
+  color: white;
+  background-color: orange;
+  padding: 2px 6px;
+  font-size: 10px;
+  border-radius: 10px;
+}
+
+.status.completed {
+  color: white;
+  background-color: green;
+  padding: 2px 6px;
+  font-size: 10px;
+  border-radius: 10px;
+}
+
+/* Messaging Bar */
+.messaging-bar {
+  margin-top: 20px;
+  display: flex;
+  gap: 8px;
+}
+
+.messaging-bar input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+}
+
+.messaging-bar .send-button {
+  background-color: #51b206;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 15px;
+  cursor: pointer;
+}
