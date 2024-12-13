@@ -11,6 +11,8 @@ import ForgotPassword from './Components/ForgotPassword';
 import Logout from './Components/Logout';
 import CreateSprint from './Components/CreateSprint';
 import Board from './Components/Board'; // Import Board component
+import ProjectDashboard from './Components/ProjectDashboard'; // Import ProjectDashboard component
+import Report from './Components/Report'; // Import Report component
 
 function App() {
   return (
@@ -29,7 +31,9 @@ function App() {
           <Route path="dashboard" element={<Dashboard />} />
           <Route path="create-project" element={<CreateProject />} />
           <Route path="create-sprint" element={<CreateSprint />} />
-          <Route path="board" element={<Board />} /> {/* Add Board route */}
+          <Route path="board" element={<Board />} /> {/* Board route */}
+          <Route path="project-dashboard" element={<ProjectDashboard />} /> {/* ProjectDashboard route */}
+          <Route path="reports" element={<Report />} /> {/* Report route */}
         </Route>
       </Routes>
     </Router>
